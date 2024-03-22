@@ -1,0 +1,38 @@
+{
+    "name": "@js-soft/docdb-access-loki",
+    "version": "1.0.6",
+    "description": "The LokiJS implementation for the '@js-soft/@js-soft/docdb-access-abstractions' library.",
+    "homepage": "https://github.com/js-soft/ts-documentdb-access#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/js-soft/ts-documentdb-access.git",
+        "directory": "packages/loki"
+    },
+    "license": "MIT",
+    "author": "j&s-soft GmbH",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "test:ci": "npm run test",
+        "test:local": "npm run test"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "testTimeout": 60000
+    },
+    "dependencies": {
+        "@js-soft/docdb-access-abstractions": "1.0.3",
+        "@types/lokijs": "1.5.14",
+        "lokijs": "1.5.12"
+    },
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    }
+}
